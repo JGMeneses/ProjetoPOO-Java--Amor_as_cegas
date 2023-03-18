@@ -1,6 +1,6 @@
 # Projeto "AMOR ÀS CEGAS"
 
-Realizado por mim e [Giovanna Oliveira](https://github.com/giovannaolvr).
+Realizado por mim e [Giovanna Oliveira](https://github.com/giovannaolvr
 ).
 
 <h2> Em geral </h2>
