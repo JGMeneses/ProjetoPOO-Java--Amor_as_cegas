@@ -15,3 +15,25 @@ Um dos primeiros questionamentos que tivemos quando iniciamos o projeto foi: _co
 
 Para a criação do projeto, foi necessário estabelecer quais entidades seriam necessárias para gerar o banco de dados, como cada entidade iria se relacionar e quais seriam seus atributos. Já sabíamos de duas entidades: **Usuário** e **Hobbies**. Porém, como era requisito do projeto ter quatro entidades, decidimos criar também a entidade **PagamentoVIP**, onde os usuários com pagamento VIP teriam alguns benefícios dentro da aplicação, e a entidade **Usuário_Hobbies**, que é justamente a tabela gerada a partir do relacionamento N para N entre os usuários e seus hobbies.
 
+#### Modelagem do Banco de Dados:
+
+- Usuario (**nickname**, _nome, login, senha, idade, genero, orientacao_sexual_)
+- Hobbies (**cod_hobbie**, _descricao_)
+- PagamentoVIP (**cpf**, _cod_pagamento, senha_cartao, numero_cartao, pg, **fk_usuario**_)
+- Usuario_Hobbies (**id**, **_fk_usuario, fk_hobbies_**)
+
+<sub> OBS.: O texto em **negrito** é uma chave primária e aquele em **_negrito e itálico_** é uma chave estrangeira.</sub>
+
+A partir disso, foi possível criar o projeto e suas classes, e então detalhá-las com seus atributos e métodos. Ao examinar o arquivo _'src'_, é possível notar a presença da classe **Match** no domínio. Essa classe foi criada com o propósito de facilitar a visualização do auto-relacionamento da tabela Usuário, uma vez que um usuário se relaciona com vários outros através da quantidade de hobbies compatíveis.
+
+#### Diagrama de Entidade Relacionamento: 
+
+![DER 1](https://user-images.githubusercontent.com/128005290/226071582-53a93be3-7205-4dd2-9d55-e9fa18c452c8.png)
+
+<h2>Status do projeto: Não finalizado</h2>
+
+#### Motivos: 
+
+- Ao realizar a operação de exclusão de um usuário, o correto seria sair do "MENU USUÁRIO". No entanto, isso não está acontecendo e, como resultado, o usuário excluído ainda tem acesso às operações, o que causa divergência entre a aplicação e o banco de dados.
+
+
