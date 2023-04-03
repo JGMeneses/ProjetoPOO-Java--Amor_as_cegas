@@ -33,8 +33,5 @@ A partir disso, foi possível criar o projeto e suas classes, e então detalhá-
 
 <h2>Status do projeto: Não finalizado</h2>
 
-#### Motivos: 
-
-- Ao realizar a operação de exclusão de um usuário, o correto seria sair do "MENU USUÁRIO". No entanto, isso não está acontecendo e, como resultado, o usuário excluído ainda tem acesso às operações, o que causa divergência entre a aplicação e o banco de dados.
 
 
