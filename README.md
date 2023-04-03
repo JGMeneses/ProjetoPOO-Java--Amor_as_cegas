@@ -31,7 +31,7 @@ A partir disso, foi possível criar o projeto e suas classes, e então detalhá-
 
 ![DER 1](https://user-images.githubusercontent.com/128005290/226071582-53a93be3-7205-4dd2-9d55-e9fa18c452c8.png)
 
-<h2>Status do projeto: Não finalizado</h2>
+
 
 
 
